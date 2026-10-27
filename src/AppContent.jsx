@@ -30,10 +30,8 @@ const faqs = [
 function Brand() {
   return (
     <span className="brand">
-      <span className="brand-mark" aria-hidden="true">
-        <b>X</b>
-        <i />
-      </span>
+      <img className="brand-logo-light" src={assetUrl("/images/Logos/Light-Mode-logo.png")} alt="Light mode logo" />
+      <img className="brand-logo-dark" src={assetUrl("/images/Logos/Dark-Mode-logo.png")} alt="Dark mode logo" />
       <span className="brand-word">
         DEV CIRCLE<span className="brand-x">X</span>
       </span>

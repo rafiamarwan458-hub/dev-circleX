@@ -76,6 +76,15 @@ textarea {
   height: 35px;
   object-fit: contain;
 }
+.brand-logo-light {
+  display: none;
+}
+html[data-theme="light"] .brand-logo-light {
+  display: block;
+}
+html[data-theme="light"] .brand-logo-dark {
+  display: none;
+}
 .brand-x {
   color: var(--brand);
 }
@@ -2405,6 +2414,10 @@ h3,
     width: 31px;
     height: 31px;
     flex-basis: 31px;
+  }
+  .brand img {
+    width: 31px;
+    height: 31px;
   }
   .brand-mark b {
     font-size: 15px;

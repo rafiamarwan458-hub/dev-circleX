@@ -343,9 +343,9 @@ function Hero({ type, kicker, title, copy, art }) {
         aria-hidden={type !== "portfolio"}
       >
         {type === "portfolio" ? (
-          <img src="\public\images\pages-images\portfolio-fan.png" alt={title} />
+          <img src={assetUrl("/images/pages-images/portfolio-fan.png")} alt={title} />
         ) : (
-          <img src="/images/pages-images/brand-orbit.png" alt={title} />
+          <img src={assetUrl("/images/pages-images/brand-orbit.png")} alt={title} />
         )}
       </div>
     </section>
@@ -562,7 +562,7 @@ export function Services() {
             <b>LET&apos;S TALK SHOPIFY ↗</b>
           </div>
           <div className="service-feature-art">
-            <img src="/images/pages-images/product-journey.png" alt="Shopify development" />
+            <img src={assetUrl("/images/pages-images/product-journey.png")} alt="Shopify development" />
           </div>
         </a>
         <a className="service-feature sf-seo reveal" href="/seo">
@@ -587,7 +587,7 @@ export function Services() {
             <b>LET&apos;S TALK SEO ↗</b>
           </div>
           <div className="service-feature-art">
-            <img src="/images/pages-images/search-system.png" alt="SEO service" />
+            <img src={assetUrl("/images/pages-images/search-system.png")} alt="SEO service" />
           </div>
         </a>
       </section>
@@ -727,7 +727,7 @@ export function About() {
           </a>
         </div>
         <div className="split-media reveal">
-          <img src="/images/pages-images/connected-work.png" alt="About working together" />
+          <img src={assetUrl("/images/pages-images/connected-work.png")} alt="About working together" />
         </div>
       </section>
       <CTA

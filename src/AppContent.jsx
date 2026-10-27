@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import { Footer, ImagePlaceholder } from "./Pages.jsx";
 
+const assetUrl = (path) =>
+  `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
+
 const faqs = [
   [
     "What can Dev CircleX help us with?",
@@ -162,7 +165,7 @@ function Header({ menuOpen, setMenuOpen, theme, setTheme }) {
 function PhoneShowcase() {
   return (
     <div className="hero-devices">
-      <img src="/images/pages-images/home-mobile-hero.png" alt="Mobile Hero" />
+      <img src={assetUrl("/images/pages-images/home-mobile-hero.png")} alt="Mobile Hero" />
     </div>
   );
 }
@@ -175,7 +178,7 @@ function Portfolio() {
       title: "WELLNESS,\nMADE CLEAR.",
       category: "HEALTH & WELLNESS",
       slug: "alcami",
-      image: "/images/pages-images/banner-alcami.png",
+      image: assetUrl("/images/pages-images/banner-alcami.png"),
     },
     {
       projectClass: "project-b",
@@ -183,7 +186,7 @@ function Portfolio() {
       title: "FRESH FROM\nTHE SOURCE.",
       category: "FOOD & BEVERAGE",
       slug: "bajafarm",
-      image: "/images/pages-images/banner-bajafarm.png",
+      image: assetUrl("/images/pages-images/banner-bajafarm.png"),
     },
     {
       projectClass: "project-c",
@@ -199,7 +202,7 @@ function Portfolio() {
       title: "CARE,\nMADE CLEAR.",
       category: "SKINCARE & BEAUTY",
       slug: "glowholic",
-      image: "/images/pages-images/banner-glowholic.png",
+      image: assetUrl("/images/pages-images/banner-glowholic.png"),
     },
   ];
   return (
@@ -361,7 +364,7 @@ function AppContent() {
         </section>
         <section className="split-section journey" id="services">
           <div className="split-media reveal">
-            <img src="/public/images/pages-images/product-journey.png" alt="Product Journey" />
+            <img src={assetUrl("/images/pages-images/product-journey.png")} alt="Product Journey" />
           </div>
           <div className="split-copy reveal">
             <span className="section-eyebrow">FROM FIRST LOOK TO CHECKOUT</span>
@@ -405,7 +408,7 @@ function AppContent() {
             </a>
           </div>
           <div className="split-media reveal">
-            <img src="/public/images/pages-images/detail-components.png" alt="studio process" />
+            <img src={assetUrl("/images/pages-images/detail-components.png")} alt="studio process" />
           </div>
         </section>
         <section className="testimonial-section work-style-section">
@@ -429,7 +432,7 @@ function AppContent() {
             </a>
           </div>
           <div className="testimonial-gallery reveal">
-            <img src="/public/images/pages-images/connected-work.png" alt="Studio details" />
+            <img src={assetUrl("/images/pages-images/connected-work.png")} alt="Studio details" />
           </div>
         </section>
         <section className="faq-section reveal">

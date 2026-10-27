@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import { caseStudyImages } from "./data/caseStudyImages.js";
 
+const assetUrl = (path) =>
+  `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
+
 const pageInfo = {
   "/services": ["SERVICES", "services"],
   "/about": ["ABOUT", "about"],

@@ -223,21 +223,6 @@ export function Footer({ notesPage = false, onSubscribe }) {
             : "Building refined ecommerce experiences and search visibility for ambitious brands."}</p>
         </div>
         <div>
-          <h3>INDUSTRIES</h3>
-          {[
-            "Fashion",
-            "Food & Beverage",
-            "Cosmetics",
-            "Health & Wellness",
-            "Jewelry",
-            "Home & Lifestyle",
-          ].map((x) => (
-            <a href="/portfolio" key={x}>
-              {x}
-            </a>
-          ))}
-        </div>
-        <div>
           <h3>COMPANY</h3>
           <a href="/portfolio">Portfolio</a>
           <a href="/about">About</a>
